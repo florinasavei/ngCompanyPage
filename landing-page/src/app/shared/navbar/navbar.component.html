@@ -1,0 +1,25 @@
+<ul ngbNav #nav="ngbNav" [activeId]="0" class="nav-tabs justify-content-center bg-blue-400">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink  routerLink="/acasa" routerLinkActive="active">Acasa</a>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink routerLink="/contact"  routerLinkActive="active">Contact</a>
+      <ng-template ngbNavContent>
+      </ng-template>
+    </li>
+    <li ngbDropdown class="nav-item">
+      <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
+      <div ngbDropdownMenu>
+        <button ngbDropdownItem>Action</button>
+        <button ngbDropdownItem>Another action</button>
+        <button ngbDropdownItem>Something else here</button>
+        <div class="dropdown-divider"></div>
+        <button ngbDropdownItem>Separated link</button>
+      </div>
+    </li>
+    <li ngbNavItem [disabled]="true" class="ml-auto">
+      <a ngbNavLink></a>
+    </li>
+  </ul>
+
+  <p>Pornim afacerea ta!</p>
