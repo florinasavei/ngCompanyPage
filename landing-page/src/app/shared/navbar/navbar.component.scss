@@ -1,4 +1,12 @@
 .bg-gradient-navy{
-    background: linear-gradient(180deg, rgba(233,216,253,1) 0%, rgba(233,216,253,1) 45%, rgba(27,29,29,0.4150035014005602) 53%, rgba(250,245,255,1) 59%);
+    background: linear-gradient(180deg, rgba(42,67,101,1) 0%, rgba(42,67,101,1) 71%, rgba(27,29,29,0.2777485994397759) 88%);
+}
 
+a{
+    color: white;
+}
+
+a.active{
+    color: black;
+    font-weight: bold;
 }

@@ -1,13 +1,23 @@
-<div class="bg-purple-200 p-1 pt-2">
-  <nav class="p-1 w-100">
+<div class="bg-blue-900 px-1 pt-2 pb-0">
+  <nav class="p-1 pb-0 w-100">
     <ul ngbNav #nav="ngbNav" [activeId]="0" class="nav-tabs border-transparent justify-content-center">
       <li [ngbNavItem]="1">
         <a ngbNavLink routerLink="/acasa" routerLinkActive="active">Acasa</a>
       </li>
       <li [ngbNavItem]="2">
+        <a ngbNavLink routerLink="/produse" routerLinkActive="active">Produse</a>
+      </li>
+      <li [ngbNavItem]="3">
+        <a ngbNavLink routerLink="/servicii" routerLinkActive="active">Servicii</a>
+      </li>
+      <li [ngbNavItem]="4">
+        <a ngbNavLink routerLink="/utile" routerLinkActive="active">Info Utile</a>
+      </li>
+      <li [ngbNavItem]="5">
+        <a ngbNavLink routerLink="/despre" routerLinkActive="active">Despre Noi</a>
+      </li>
+      <li [ngbNavItem]="6">
         <a ngbNavLink routerLink="/contact" routerLinkActive="active">Contact</a>
-        <ng-template ngbNavContent>
-        </ng-template>
       </li>
       <li ngbDropdown class="nav-item">
         <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
@@ -19,13 +29,15 @@
           <button ngbDropdownItem>Separated link</button>
         </div>
       </li>
-      <li [ngbNavItem]="3" class="m-auto">
-        <a class="navbar-brand" href="/">Pos Retail</a>
+      <li [ngbNavItem]="7" class="m-auto">
+        <a class="navbar-brand" href="/" class="flex">
+          <img class="h-8" src="../../../assets/img/logo-noText.png">
+        </a>
       </li>
       <li ngbNavItem [disabled]="true" class="ml-auto">
-        <a ngbNavLink></a>
+        <a ngbNavLink></a> 
       </li>
     </ul>     
   </nav>
 </div>
-<div class="h-8 w-full bg-gradient-navy"> </div>
+<div class="h-3 w-full bg-gradient-navy"> </div>
