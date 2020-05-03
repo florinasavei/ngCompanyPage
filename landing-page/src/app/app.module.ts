@@ -20,7 +20,7 @@ import { AboutComponent } from './pages/about/about.component';
     AboutComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgbModule
   ],
