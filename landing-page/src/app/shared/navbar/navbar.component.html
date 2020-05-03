@@ -4,11 +4,28 @@
       <li [ngbNavItem]="1">
         <a ngbNavLink routerLink="/acasa" routerLinkActive="active">Acasa</a>
       </li>
-      <li [ngbNavItem]="2">
-        <a ngbNavLink routerLink="/produse" routerLinkActive="active">Produse</a>
+      <li [ngbNavItem]="2" ngbDropdown class="nav-item">
+        <a ngbNavLink routerLink="/produse" routerLinkActive="active" ngbDropdownToggle>Produse</a>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem>Case de marcat</button>
+          <button ngbDropdownItem>Imprimante</button>
+          <button ngbDropdownItem>Cantare</button>
+          <button ngbDropdownItem>Consumabile</button>
+          <button ngbDropdownItem>Cititoare coduri de bare</button>
+          <button ngbDropdownItem>Monitoare sisteme POS</button>
+          <div class="dropdown-divider"></div>
+          <button ngbDropdownItem>Solutii pentru vanzare si gestiune</button>
+        </div>
       </li>
-      <li [ngbNavItem]="3">
-        <a ngbNavLink routerLink="/servicii" routerLinkActive="active">Servicii</a>
+      <li [ngbNavItem]="3" ngbDropdown class="nav-item">
+        <a ngbNavLink routerLink="/servicii" routerLinkActive="active" ngbDropdownToggle>Servicii</a>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem>Fiscalizare</button>
+          <button ngbDropdownItem>Instalari echipamente</button>
+          <button ngbDropdownItem>Instruire personal</button>
+          <button ngbDropdownItem>Intocmire dosar fiscal</button>
+          <button ngbDropdownItem>Mentenanta</button>
+        </div>
       </li>
       <li [ngbNavItem]="4">
         <a ngbNavLink routerLink="/utile" routerLinkActive="active">Info Utile</a>
@@ -18,16 +35,6 @@
       </li>
       <li [ngbNavItem]="6">
         <a ngbNavLink routerLink="/contact" routerLinkActive="active">Contact</a>
-      </li>
-      <li ngbDropdown class="nav-item">
-        <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
-        <div ngbDropdownMenu>
-          <button ngbDropdownItem>Action</button>
-          <button ngbDropdownItem>Another action</button>
-          <button ngbDropdownItem>Something else here</button>
-          <div class="dropdown-divider"></div>
-          <button ngbDropdownItem>Separated link</button>
-        </div>
       </li>
       <li [ngbNavItem]="7" class="m-auto">
         <a class="navbar-brand" href="/" class="flex">
