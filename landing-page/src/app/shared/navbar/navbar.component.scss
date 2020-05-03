@@ -1,5 +1,5 @@
 .bg-gradient-navy{
-    background: linear-gradient(180deg, rgba(42,67,101,1) 0%, rgba(42,67,101,1) 71%, rgba(27,29,29,0.2777485994397759) 88%);
+    background: linear-gradient(180deg, #2a2b2b 0%, #2a2b2b 71%, rgba(27,29,29,0.2777485994397759) 88%);
 }
 
 a{
@@ -9,4 +9,8 @@ a{
 a.active{
     color: black;
     font-weight: bold;
+}
+
+.header-background{
+    background-color: #2a2b2b;
 }
