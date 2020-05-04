@@ -25,7 +25,7 @@
         </div>
       </li>
       <li [ngbNavItem]="3" ngbDropdown class="nav-item">
-        <a ngbNavLink routerLink="/servicii" routerLinkActive="active" ngbDropdownToggle>Servicii</a>
+        <a ngbNavLink routerLink="/servicii" routerLinkActive="active"  ngbDropdownToggle>Servicii</a>
         <div ngbDropdownMenu>
           <button ngbDropdownItem>Fiscalizare</button>
           <button ngbDropdownItem>Instalari echipamente</button>
@@ -35,16 +35,16 @@
         </div>
       </li>
       <li [ngbNavItem]="4">
-        <a ngbNavLink routerLink="/utile" routerLinkActive="active">Info Utile</a>
+        <a ngbNavLink routerLink="/utile" routerLinkActive="active" (click)="isMenuCollapsed = true">Info Utile</a>
       </li>
       <li [ngbNavItem]="5">
-        <a ngbNavLink routerLink="/despre" routerLinkActive="active">Despre Noi</a>
+        <a ngbNavLink routerLink="/despre" routerLinkActive="active" (click)="isMenuCollapsed = true">Despre Noi</a>
       </li>
       <li [ngbNavItem]="6">
-        <a ngbNavLink routerLink="/contact" routerLinkActive="active">Contact</a>
+        <a ngbNavLink routerLink="/contact" routerLinkActive="active" (click)="isMenuCollapsed = true">Contact</a>
       </li>
       <li [ngbNavItem]="7" class="mx-auto d-none d-sm-none d-md-none d-lg-block d-xl-block">
-        <a href="/" class="-ml-64 flex">
+        <a href="/" class="-ml-64 flex" (click)="isMenuCollapsed = true">
           <img class="h-10" src="../../../assets/img/logo-noText.png">
         </a>
       </li>
