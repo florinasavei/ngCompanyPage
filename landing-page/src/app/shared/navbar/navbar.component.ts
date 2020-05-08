@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +13,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   public isMenuCollapsed = true;
+
+  public scroll(element: any) {
+    document.querySelector(element).scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
 }
