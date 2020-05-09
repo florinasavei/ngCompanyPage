@@ -1,6 +1,6 @@
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 ">
 
-        <div class="flex">
+        <div class="flex justify-between">
             <ngb-carousel #carousel [interval]="1000" [pauseOnHover]="true" [interval]="5000"
                 (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let img of product.images; index as i">

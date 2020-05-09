@@ -14,6 +14,33 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  products: Product[] = [
+    {
+      images : ['../../assets/img/products/cash-registers/SuccesM4/SuccesM4.png', '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_2.png',
+      '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_3.png']
+    },
+    {
+      images : ['../../assets/img/products/cash-registers/SuccesM4/SuccesM4.png', '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_2.png',
+      '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_3.png']
+    },
+    {
+      images : ['../../assets/img/products/cash-registers/SuccesM4/SuccesM4.png', '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_2.png',
+      '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_3.png']
+    },
+    {
+      images : ['../../assets/img/products/cash-registers/SuccesM4/SuccesM4.png', '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_2.png',
+      '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_3.png']
+    },
+    {
+      images : ['../../assets/img/products/cash-registers/SuccesM4/SuccesM4.png', '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_2.png',
+      '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_3.png']
+    },
+    {
+      images : ['../../assets/img/products/cash-registers/SuccesM4/SuccesM4.png', '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_2.png',
+      '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_3.png']
+    },
+  ]
+
   product: Product = {
     images : ['../../assets/img/products/cash-registers/SuccesM4/SuccesM4.png', '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_2.png',
     '../../assets/img/products/cash-registers/SuccesM4/SuccesM4_3.png']
