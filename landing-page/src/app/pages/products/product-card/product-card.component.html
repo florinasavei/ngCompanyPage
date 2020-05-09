@@ -1,14 +1,9 @@
-
-<div id="case-de-marcat">
-    <h2 class="text-2xl text-center">Case de marcat</h2>
-
-
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
 
         <div class="flex">
             <ngb-carousel #carousel [interval]="1000" [pauseOnHover]="true" [interval]="5000"
                 (slide)="onSlide($event)">
-                <ng-template ngbSlide *ngFor="let img of images; index as i">
+                <ng-template ngbSlide *ngFor="let img of product.images; index as i">
                     <div class="carousel-caption">
                         <h3>Success M4</h3>
                     </div>
@@ -37,5 +32,3 @@
                 class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
         </div>
     </div>
-
-</div>
