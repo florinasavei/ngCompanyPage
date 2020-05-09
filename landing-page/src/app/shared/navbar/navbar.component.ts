@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ViewChild, ElementRef } from '@angular/core';
+import { UiHelpService } from 'src/app/helpers/ui-help.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +8,7 @@ import { ViewChild, ElementRef } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public uiHelp:UiHelpService) { }
 
   ngOnInit(): void {
   }
@@ -16,8 +16,5 @@ export class NavbarComponent implements OnInit {
 
   public isMenuCollapsed = true;
 
-  public scroll(element: any) {
-    document.querySelector(element).scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }
 
 }
