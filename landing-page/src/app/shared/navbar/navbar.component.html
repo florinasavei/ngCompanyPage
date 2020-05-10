@@ -1,4 +1,4 @@
-<div class="header-background px-1 pt-2 pb-0">
+<div class="header-background px-1 pt-2 pb-0 fixed w-full z-50">
   <nav class="p-1 pb-0 w-100 navbar navbar-expand-lg">
     <a class="navbar-brand" href="/" class="flex d-lg-none">
       <img class="h-8" src="../../../assets/img/logo-noText.png">
@@ -14,14 +14,14 @@
       <li [ngbNavItem]="2" ngbDropdown class="nav-item">
         <a ngbNavLink routerLink="/produse" routerLinkActive="active" ngbDropdownToggle>Produse</a>
         <div ngbDropdownMenu>
-          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat')">Case de marcat</button>
-          <button ngbDropdownItem >Imprimante</button>
-          <button ngbDropdownItem>Cantare</button>
-          <button ngbDropdownItem>Consumabile</button>
-          <button ngbDropdownItem>Cititoare coduri de bare</button>
-          <button ngbDropdownItem>Monitoare sisteme POS</button>
+          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat'); isMenuCollapsed = true;">Case de marcat</button>
+          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat'); isMenuCollapsed = true;">Imprimante</button>
+          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat'); isMenuCollapsed = true;">Cantare</button>
+          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat'); isMenuCollapsed = true;">Consumabile</button>
+          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat'); isMenuCollapsed = true;">Cititoare coduri de bare</button>
+          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat'); isMenuCollapsed = true;">Monitoare sisteme POS</button>
           <div class="dropdown-divider"></div>
-          <button ngbDropdownItem>Solutii pentru vanzare si gestiune</button>
+          <button ngbDropdownItem (click)="uiHelp.scroll('#case-de-marcat'); isMenuCollapsed = true;">Solutii pentru vanzare si gestiune</button>
         </div>
       </li>
       <li [ngbNavItem]="3" ngbDropdown class="nav-item">

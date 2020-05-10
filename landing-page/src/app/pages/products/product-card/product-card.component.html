@@ -5,7 +5,7 @@
                 (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let img of product.images; index as i">
                     <div class="carousel-caption">
-                        <h3>Success M4</h3>
+                        <!-- <h3>Success M4</h3> -->
                     </div>
                     <a target="_blank" rel="nofollow noopener noreferrer">
                         <div class="picsum-img-wrapper">
@@ -17,7 +17,7 @@
         </div>
 
         <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <div class="font-bold text-xl mb-2">{{product.name}}</div>
             <p class="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
                 perferendis eaque, exercitationem praesentium nihil.
