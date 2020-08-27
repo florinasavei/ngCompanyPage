@@ -11,7 +11,8 @@
     "dev:ssr": "ng run landing-page:serve-ssr",
     "serve:ssr": "node dist/landing-page/server/main.js",
     "build:ssr": "ng build --prod && ng run landing-page:server:production",
-    "prerender": "ng run landing-page:prerender"
+    "prerender": "ng run landing-page:prerender",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
@@ -29,13 +30,14 @@
     "@nguniversal/express-engine": "^9.1.0",
     "bootstrap": "^4.4.0",
     "express": "^4.15.2",
+    "googleapis": "^59.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "^9.1.0",
-    "@angular-devkit/build-angular": "~0.901.4",
+    "@angular-devkit/build-angular": "^0.1000.8",
     "@angular/cli": "~9.1.4",
     "@angular/compiler-cli": "~9.1.4",
     "@angular/language-service": "~9.1.4",
@@ -56,7 +58,7 @@
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-scss": "^2.0.0",
-    "protractor": "~5.4.3",
+    "protractor": "^7.0.0",
     "tailwindcss": "^1.4.4",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
