@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UiHelpService } from 'src/app/helpers/ui-help.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public uiHelp:UiHelpService) { }
 
   ngOnInit(): void {
   }
+
+  public isMenuCollapsed = true;
 
 }
