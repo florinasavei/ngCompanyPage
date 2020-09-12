@@ -1,1 +1,9 @@
-<p>products works!</p>
+
+<div id="case-de-marcat">
+    <h2 class="text-2xl text-center ">Case de marcat:</h2>
+
+    <div class="flex flex-wrap justify-center items-center">
+        <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+    </div>
+
+</div>
