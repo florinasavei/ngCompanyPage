@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'landing-page';
   images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);

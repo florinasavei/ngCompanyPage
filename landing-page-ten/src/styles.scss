@@ -5,3 +5,9 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '../node_modules/bootstrap';
+@import './customize-bootstrap.scss';
+
+.repeating-background{
+    background-image: url(../src/assets/img/background-repeat.png);
+    background-repeat: repeat-all; 
+}
